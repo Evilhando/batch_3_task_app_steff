@@ -4,6 +4,11 @@ class S4511 extends StatelessWidget {
   const S4511({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    throw UnimplementedError();
+    return const Center(
+      child: Text(
+        'Hello World',
+        style: TextStyle(fontSize: 24),
+      ),
+    );
   }
 }

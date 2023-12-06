@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
 bool isPalindrome(String input) {
-  // Lösung hier einfügen
-  throw UnimplementedError();
+  // Alle nicht-alphanumerischen Zeichen entfernen
+  // Kleinbuchstaben verwenden für den Vergleich
+  String cleanInput =
+      input.replaceAll(RegExp(r'[^a-zA-Z0-9]'), '').toLowerCase();
+
+  // Überprüfen, ob der bereinigte String gleich seiner Umkehrung ist
+  return cleanInput == cleanInput.split('').reversed.join('');
 }
 
 class S3385 extends StatefulWidget {
