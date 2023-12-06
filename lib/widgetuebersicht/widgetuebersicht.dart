@@ -1,90 +1,90 @@
-// void main() {
-//   final myApp = MyMaterialApp(
-//     home: MyScaffold(
-//       body: MyCenter(
-//         child: MyColumn(
-//           children: [
-//             MyText("Hallo"),
-//           ],
-//         ),
-//       ),
-//     ),
-//   );
+void main() {
+  final myApp = MyMaterialApp(
+    home: MyScaffold(
+      body: MyCenter(
+        child: MyColumn(
+          children: [
+            MyText("Hallo"),
+          ],
+        ),
+      ),
+    ),
+  );
 
-//   print(myApp.build());
-// }
+  print(myApp.build());
+}
 
-// class MyMaterialApp {
-//   final MyScaffold home;
+class MyMaterialApp {
+  final MyScaffold home;
 
-//   MyMaterialApp({required this.home});
+  MyMaterialApp({required this.home});
 
-//   String build() {
-//     return '''
-//      MaterialApp(
-//        home: ${home.build()}
-//      )
-//    ''';
-//   }
-// }
+  String build() {
+    return '''
+     MaterialApp(
+       home: ${home.build()}
+     )
+   ''';
+  }
+}
 
-// class MyScaffold {
-//   final MyCenter body;
+class MyScaffold {
+  final MyCenter body;
 
-//   MyScaffold({required this.body});
+  MyScaffold({required this.body});
 
-//   String build() {
-//     return '''
-//      Scaffold(
-//        body: ${body.build()}
-//      )
-//    ''';
-//   }
-// }
+  String build() {
+    return '''
+     Scaffold(
+       body: ${body.build()}
+     )
+   ''';
+  }
+}
 
-// class MyCenter {
-//   final Widget child;
+class MyCenter {
+  final Widget child;
 
-//   MyCenter({required this.child});
+  MyCenter({required this.child});
 
-//   String build() {
-//     return '''
-//      Center(
-//        child: ${child.build()}
-//      )
-//    ''';
-//   }
-// }
+  String build() {
+    return '''
+     Center(
+       child: ${child.build()}
+     )
+   ''';
+  }
+}
 
-// class MyColumn {
-//   final List<Widget> children;
+class MyColumn implements Widget {
+  final List<Widget> children;
 
-//   MyColumn({required this.children});
+  MyColumn({required this.children});
 
-//   String build() {
-//     final childrenCode = children.map((child) => child.build()).join(',\n');
-//     return '''
-//      Column(
-//        children: [
-//          $childrenCode
-//        ]
-//      )
-//    ''';
-//   }
-// }
+  String build() {
+    final childrenCode = children.map((child) => child.build()).join(',\n');
+    return '''
+     Column(
+       children: [
+         $childrenCode
+       ]
+     )
+   ''';
+  }
+}
 
-// class MyText {
-//   final String text;
+class MyText implements Widget {
+  final String text;
 
-//   MyText(this.text);
+  MyText(this.text);
 
-//   String build() {
-//     return '''
-//      Text("$text")
-//    ''';
-//   }
-// }
+  String build() {
+    return '''
+     Text("$text")
+   ''';
+  }
+}
 
-// abstract class Widget {
-//   String build();
-// }
+abstract class Widget {
+  String build();
+}
