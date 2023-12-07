@@ -4,7 +4,14 @@ class S4535 extends StatelessWidget {
   const S4535({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return MyColumnRowContainer();
+    return Padding(
+      padding: const EdgeInsets.all(28.0),
+      child: Container(
+          color: Colors.white,
+          child: const Padding(
+              padding: EdgeInsets.only(top: 55, bottom: 15),
+              child: MyColumnRowContainer())),
+    );
   }
 }
 
@@ -14,9 +21,9 @@ class MyColumnRowContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
               height: 100,
@@ -31,6 +38,7 @@ class MyColumnRowContainer extends StatelessWidget {
           ],
         ),
         Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
               height: 100,
