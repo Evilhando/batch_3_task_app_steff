@@ -3,9 +3,12 @@
 ## Setup
 
 [Video-Anleitung](https://www.youtube.com/watch?v=VHsAfd0oumM)
+[Video-Anleitung](https://www.youtube.com/watch?v=VHsAfd0oumM)
 
 ⚠️ Please ***fork*** the app in GitHub before cloning it to your computer.
+⚠️ Please ***fork*** the app in GitHub before cloning it to your computer.
 
+## How to solve a task
 ## How to solve a task
 
 To solve a task follow these steps:
@@ -29,6 +32,7 @@ Task(
 ```
 
 4. Solve the task inside the class mentioned in the solution (e.g. `S311` in `lib/solutions/chapter_3/s_3_1_1.dart`)
+
 
 5. Validate your solution in VSCode by running the corresponding tests.
 
