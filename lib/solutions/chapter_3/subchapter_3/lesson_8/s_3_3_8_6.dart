@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 
 bool isAnagram(String word1, String word2) {
-  // Lösung hier einfügen
-  throw UnimplementedError();
+  word1 = word1.replaceAll(' ', '').toLowerCase();
+  word2 = word2.replaceAll(' ', '').toLowerCase();
+
+  List<String> sortedWord1 = word1.split('')..sort();
+  List<String> sortedWord2 = word2.split('')..sort();
+
+  // Compare the sorted words
+  return sortedWord1.join() == sortedWord2.join();
 }
 
 class S3386 extends StatefulWidget {
