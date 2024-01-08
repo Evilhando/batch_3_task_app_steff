@@ -114,31 +114,31 @@ const List<Task> chapter5TaskList = [
   ),
   Task(
     taskModel: t_5_3_1_1,
-    // solution: S5311(),
+    solution: S5311(),
   ),
   Task(
     taskModel: t_5_3_1_2,
-    // solution: S5312(),
+    solution: S5312(),
   ),
   Task(
     taskModel: t_5_3_1_3,
-    // solution: S5313(),
+    solution: S5313(),
   ),
   Task(
     taskModel: t_5_3_2_1,
-    // solution: S5321(),
+    solution: S5321(),
   ),
   Task(
     taskModel: t_5_3_2_2,
-    // solution: S5322(),
+    solution: S5322(),
   ),
   Task(
     taskModel: t_5_3_2_3,
-    // solution: S5323(),
+    solution: S5323(),
   ),
   Task(
     taskModel: t_5_3_2_4,
-    // solution: S5324(),
+    solution: S5324(),
   ),
   Task(
     taskModel: t_5_3_3_1,
